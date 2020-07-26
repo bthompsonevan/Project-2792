@@ -1,36 +1,67 @@
 pico-8 cartridge // http://www.pico-8.com
 version 18
 __lua__
-
+--initialize
 
 function _init()
-cls()
+	--variables
+	scene="menu"
 end
 
-
-
+-->8
+--main update and draw
 function _update()
-
-
+	if scene=="menu" then
+		update_menu()
+	elseif scene "game" then
+		update_game()
+	end	
 end
-
-
 
 function _draw()
+	if scene=="menu" then
+		draw_menu()
+	elseif scene "game" then
+		draw_game()
+	end	
+end
+-->8
+--updates
 
-mapdraw()
-spr(rndnum(16),64,64)
-spr(rndnum(16),59,59)
+function update_menu()
+	if btnp(x) then
+		scene="game"
+	end
 end
 
+function update_game()
+	if btnp(x) then 
+		scene="menu"
+	end
+end
+-->8
+--draws
+
+function draw_menu()
+	cls()
+	print("press x to start",30,63)
+end
+
+function draw_game()
+	cls()
+	
+	mapdraw()
+spr(rndnum(16),64,64)
+spr(rndnum(16),59,59)
+
+end
+-->8
+--functions
 function rndnum(n1)
 
 return rnd(n1)+128
-
+	
 end
-
-
-
 __gfx__
 00000000000005556666666666666666666666665550000066561650165666666666656166666666555555556666656116566666555555555555555555555555
 00000000000055556666686666666666669696665555000066561650116555555555561166666666555555556666561111656666000000005555555555555555
