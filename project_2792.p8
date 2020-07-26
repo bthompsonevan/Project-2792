@@ -13,7 +13,7 @@ end
 function _update()
 	if scene=="menu" then
 		update_menu()
-	elseif scene "game" then
+	elseif scene=="game" then
 		update_game()
 	end	
 end
@@ -21,7 +21,7 @@ end
 function _draw()
 	if scene=="menu" then
 		draw_menu()
-	elseif scene "game" then
+	elseif scene=="game" then
 		draw_game()
 	end	
 end
@@ -51,8 +51,8 @@ function draw_game()
 	cls()
 	
 	mapdraw()
-spr(rndnum(16),64,64)
-spr(rndnum(16),59,59)
+	spr(rndnum(16),64,64)
+	spr(rndnum(16),59,59)
 
 end
 -->8
