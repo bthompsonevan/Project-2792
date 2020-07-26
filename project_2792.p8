@@ -29,13 +29,13 @@ end
 --updates
 
 function update_menu()
-	if btnp(x) then
+	if btnp(❎) then
 		scene="game"
 	end
 end
 
 function update_game()
-	if btnp(x) then 
+	if btnp(❎) then 
 		scene="menu"
 	end
 end
