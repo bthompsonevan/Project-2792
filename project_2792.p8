@@ -44,9 +44,9 @@ end
 
 function draw_menu()
 	cls()
-	print("press x to start",30,63)
 	map(16,0)
-
+ print("press ❎ to start",0,0,0)
+	
 end
 
 function draw_game()
